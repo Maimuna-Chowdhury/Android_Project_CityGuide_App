@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightSky">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="@color/mauve">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#042556">
+            <TextView
+                android:id="@+id/ne_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="North End"
+                android:textSize="15sp"
+                android:fontFamily="@font/baloo"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/lightWhite"
+                android:padding="25dp"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Khulna"
+                android:layout_alignBottom="@+id/ne_e"
+                android:paddingLeft="25dp"
+                android:id="@+id/ne_city_e"
+                android:textColor="@color/lightWhite"
+
+                android:fontFamily="@font/muli_extrabold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ne_city_e"
+                android:text="Doulotpur"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:padding="20dp"
+                android:id="@+id/ne_area_e"
+                android:textColor="@color/lightWhite"
+                android:fontFamily="@font/muli_extrabold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ne_area_e"
+                android:text="plot 32"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:padding="20dp"
+                android:id="@+id/ne_loc_e"
+                android:textColor="@color/lightWhite"
+                android:fontFamily="@font/muli_extrabold"/>
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:id="@+id/rating_shop"
+                android:numStars="5"
+                android:stepSize="0.2"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@+id/ne_type_e"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="Grocery"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:padding="20dp"
+                android:textSize="20sp"
+                android:id="@+id/ne_type_e"
+                android:textColor="@color/lightWhite"
+                android:fontFamily="@font/muli_extrabold"/>
+
+            <!-- <ImageView
+                 android:id="@+id/nei"
+                 android:layout_width="120dp"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/ne"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginStart="20dp"
+                 android:layout_marginTop="20dp"
+                 android:layout_marginEnd="20dp"
+                 android:layout_marginRight="60dp"
+                 android:layout_marginBottom="20dp"/>-->
+            <TextView
+                android:id="@+id/ne_ranking_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="175dp"
+                android:fontFamily="@font/muli_extrabold"
+                android:text="Pricey"
+                android:textColor="@color/lightWhite"
+                android:textSize="15sp" />
+
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:background="@color/lighter_blue">
+
+
+            <Button
+                android:id="@+id/ne_num_e"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:padding="20dp"
+                android:text="01313-361600"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

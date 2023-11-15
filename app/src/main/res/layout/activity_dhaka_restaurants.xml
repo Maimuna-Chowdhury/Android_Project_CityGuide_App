@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.DhakaRestaurants"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_res"
+            android:hint="Search Restaurants"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/search_res"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="76dp"
+            android:src="@drawable/spoon" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/light_blue"
+        android:listSelector="@color/lighter_blue"
+        android:id="@+id/res_listView">
+    </ListView>
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:orientation="vertical">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="?actionBarSize">
+
+             <ImageView
+                 android:id="@+id/back_pressed"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:padding="15dp"
+                 android:src="@drawable/ic_baseline_arrow_back_24" />
+
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/ic_baseline_search_24"
+                 android:padding="15dp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"/>
+
+         </RelativeLayout>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Restaurants in Dhaka"
+             android:textSize="25sp"
+             android:padding="10dp"
+             android:textAllCaps="true"
+             android:textColor="@color/colorAccent"
+             android:layout_gravity="center"
+             android:fontFamily="@font/brandon_grotesque_black"/>
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/black"
+             app:cardElevation="8dp"
+             android:layout_margin="20dp">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="150dp"
+                 android:background="#FFC107">
+
+                 <TextView
+                     android:id="@+id/momo"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="10dp"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginEnd="10dp"
+                     android:layout_marginBottom="10dp"
+                     android:fontFamily="@font/baloo"
+                     android:padding="20dp"
+                     android:text="Yum Cha District"
+                     android:textColor="@color/white"
+                     android:textSize="30sp" />
+                 <TextView
+                     android:id="@+id/location"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginBottom="15dp"
+                     android:padding="20dp"
+                     android:text="Bashundhara Residential\nArea,Dhaka1229"
+                     android:textColor="@color/white"
+                     android:fontFamily="@font/muli_extrabold"
+
+                     />
+
+
+                 <Button
+                     android:id="@+id/contact"
+                     android:layout_width="wrap_content"
+                     android:layout_height="45dp"
+                     android:layout_alignParentBottom="true"
+                     android:background="#00000000"
+                     android:text="01756-785722"
+                     android:fontFamily="@font/muli_extrabold"
+                     android:paddingLeft="10dp"
+                     android:layout_marginLeft="10dp"
+                     android:textColor="@color/white"
+                     />
+
+
+                 <ImageView
+
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:layout_alignBottom="@+id/location"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginRight="4dp"
+                     android:layout_marginBottom="-49dp"
+                     android:src="@drawable/momo" />
+
+
+               <TextView
+                      android:id="@+id/momo"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:fontFamily="@font/baloo"
+                      android:padding="25dp"
+                      android:text="Yum Cha District"
+                      android:textColor="@color/white"
+                      android:textSize="30sp" />
+
+                  <Button
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Expand All"
+                      android:background="#00000000"
+                      android:padding="20dp"
+                      android:textColor="@color/black"
+                      android:layout_alignParentBottom="true"/>
+                  <ImageView
+
+                      android:layout_width="100dp"
+                      android:layout_height="100dp"
+                      android:src="@drawable/momo"
+                      android:layout_alignParentRight="true"/>
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_alignBottom="@+id/momo"
+                      android:layout_alignParentRight="true"
+                      android:layout_marginStart="30dp"
+                      android:layout_marginTop="30dp"
+                      android:layout_marginEnd="30dp"
+                      android:layout_marginRight="64dp"
+                      android:layout_marginBottom="56dp"
+                      android:text="Level 4, House 42 & 43 (Gawsia Twin Peak); 9/A Satmasjid Road; Dhanmondi"
+                      android:textColor="@color/white" />
+
+
+             </RelativeLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/light_mint"
+             app:cardElevation="8dp"
+             android:layout_margin="20dp"
+             >
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="150dp"
+                 android:background="@color/colorAccent">
+                 <TextView
+                     android:id="@+id/title"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Khana's"
+                     android:textSize="30sp"
+                     android:fontFamily="@font/baloo"
+                     android:layout_alignParentLeft="true"
+                     android:padding="25dp"
+                     android:textColor="#92F43636"/>
+
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginBottom="15dp"
+                     android:padding="20dp"
+                     android:text="Bashundhara Residential\nArea,Dhaka1229"
+                     android:textColor="#92F43636"
+                     android:fontFamily="@font/muli_extrabold"/>
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginRight="215dp"
+                     android:layout_marginBottom="0dp"
+                     android:background="#00000000"
+                     android:padding="20dp"
+                     android:text="01726-805954"
+                     android:textColor="#92F43636" />
+
+                 <ImageView
+                     android:layout_width="120dp"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginStart="20dp"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginEnd="20dp"
+                     android:layout_marginRight="60dp"
+                     android:layout_marginBottom="20dp"
+                     android:src="@drawable/khanas" />
+
+
+             </RelativeLayout>
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="8dp"
+             android:layout_margin="20dp"
+             android:background="@color/lighter_blue">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="150dp"
+                 android:background="#765341">
+                 <TextView
+                     android:id="@+id/ne"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="North End"
+                     android:textSize="20sp"
+                     android:fontFamily="@font/baloo"
+                     android:layout_alignParentLeft="true"
+                     android:padding="25dp"
+                     />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Plot 11A, Road 48, Block\nCWNGulshan-2"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginBottom="15dp"
+                     android:padding="20dp"
+                     android:fontFamily="@font/muli_extrabold"/>
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginRight="215dp"
+                     android:layout_marginBottom="0dp"
+                     android:padding="20dp"
+                     android:background="#00000000"
+                     android:text="01313-361600"
+                     />
+
+                 <ImageView
+                     android:id="@+id/nei"
+                     android:layout_width="120dp"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/ne"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginStart="20dp"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginEnd="20dp"
+                     android:layout_marginRight="60dp"
+                     android:layout_marginBottom="20dp"/>
+
+
+
+
+             </RelativeLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/white"
+             app:cardElevation="8dp"
+             android:layout_margin="20dp">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="150dp"
+                 android:background="@color/white">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="The Pabulum"
+                     android:textSize="20sp"
+                     android:fontFamily="@font/baloo"
+                     android:layout_alignParentLeft="true"
+                     android:padding="25dp"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="40,41 Siddeshwari,1205"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginBottom="15dp"
+                     android:padding="20dp"
+                     android:textColor="@color/black"/>
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginRight="215dp"
+                     android:layout_marginBottom="0dp"
+                     android:padding="20dp"
+                     android:background="#00000000"
+                     android:text="01837-888585"
+                     />
+                 <ImageView
+                     android:layout_width="120dp"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/pabulum"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginStart="20dp"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginEnd="20dp"
+                     android:layout_marginRight="60dp"
+                     android:layout_marginBottom="20dp"/>
+
+
+
+
+
+
+             </RelativeLayout>
+
+         </androidx.cardview.widget.CardView>
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="8dp"
+             android:layout_margin="20dp"
+             android:background="@color/lighter_blue">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="150dp"
+                 android:background="#433117">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Sultan's Dine"
+                     android:textSize="30sp"
+                     android:fontFamily="@font/baloo"
+                     android:layout_alignParentLeft="true"
+                     android:padding="25dp"
+                     android:textColor="@color/light_gray"/>
+
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginBottom="15dp"
+                     android:padding="20dp"
+                     android:text="Green Akshay Plaza, 146/G\n(old), 59 (new), Satmasjid\nRoad"
+                     android:textColor="@color/light_gray"
+                     android:fontFamily="@font/muli_extrabold"/>
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginRight="215dp"
+                     android:layout_marginBottom="0dp"
+                     android:background="#00000000"
+                     android:padding="20dp"
+                     android:text="01775-003218"
+                     android:textColor="@color/light_gray" />
+
+                 <ImageView
+                     android:layout_width="120dp"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginStart="20dp"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginEnd="20dp"
+                     android:layout_marginRight="60dp"
+                     android:layout_marginBottom="20dp"
+                     android:src="@drawable/sultan" />
+
+
+
+             </RelativeLayout>
+
+         </androidx.cardview.widget.CardView>
+
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="8dp"
+             android:layout_margin="20dp"
+             android:background="@color/light_gray">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="150dp"
+                 android:background="#131433">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Domino's Pizza"
+                     android:textSize="30sp"
+                     android:fontFamily="@font/baloo"
+                     android:layout_alignParentLeft="true"
+                     android:padding="25dp"
+                     android:textColor="@color/light_gray"/>
+
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginBottom="15dp"
+                     android:padding="20dp"
+                     android:text="Mirpur,Dhanmondi,Khilgaon"
+                     android:textColor="@color/light_gray"
+                     android:fontFamily="@font/muli_extrabold"/>
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginRight="215dp"
+                     android:layout_marginBottom="0dp"
+                     android:background="#00000000"
+                     android:padding="20dp"
+                     android:text="09612-216656"
+                     android:textColor="@color/light_gray" />
+
+                 <ImageView
+                     android:layout_width="120dp"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginStart="20dp"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginEnd="20dp"
+                     android:layout_marginRight="60dp"
+                     android:layout_marginBottom="20dp"
+                     android:src="@drawable/dom" />
+
+
+
+             </RelativeLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="8dp"
+             android:layout_margin="20dp"
+             android:background="@color/lighter_blue">
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="150dp"
+                 android:background="#DFD68D">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Barcode Cafe"
+                     android:textSize="30sp"
+                     android:fontFamily="@font/baloo"
+                     android:layout_alignParentLeft="true"
+                     android:padding="25dp"
+                     android:textColor="@color/colorAccent"/>
+
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginBottom="15dp"
+                     android:padding="20dp"
+                     android:text="Banani 1212"
+                     android:textColor="@color/colorAccent"
+                     android:fontFamily="@font/muli_extrabold"/>
+
+                 <Button
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginRight="215dp"
+                     android:layout_marginBottom="0dp"
+                     android:background="#00000000"
+                     android:padding="20dp"
+                     android:text="01735-986411"
+                     android:textColor="@color/colorAccent" />
+
+                 <ImageView
+                     android:layout_width="120dp"
+                     android:layout_height="match_parent"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentBottom="true"
+                     android:layout_marginStart="20dp"
+                     android:layout_marginTop="20dp"
+                     android:layout_marginEnd="20dp"
+                     android:layout_marginRight="60dp"
+                     android:layout_marginBottom="20dp"
+                     android:src="@drawable/barcode" />
+
+
+
+
+             </RelativeLayout>
+
+         </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+     </LinearLayout>
+ -->
+    </LinearLayout>

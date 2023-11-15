@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Education"
+    android:background="@color/lightSky"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_toLeftOf="@+id/search_e"
+            android:padding="30dp"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_e"
+            android:hint="Search"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/search_e"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/edu" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/light_blue"
+        android:listSelector="@color/lighter_blue"
+        android:id="@+id/e_listView">
+    </ListView>
+
+
+</LinearLayout>

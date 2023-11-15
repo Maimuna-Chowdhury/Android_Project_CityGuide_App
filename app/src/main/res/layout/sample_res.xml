@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="#BDA55D">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FDEFB2">
+            <TextView
+                android:id="@+id/ne_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="North End"
+                android:textSize="20sp"
+                android:fontFamily="@font/baloo"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/colorAccent"
+                android:padding="25dp"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Khulna"
+                android:layout_alignBottom="@+id/ne_r"
+                android:paddingLeft="25dp"
+                android:id="@+id/ne_city_r"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/muli_extrabold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ne_city_r"
+                android:text="Doulotpur"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:padding="25dp"
+                android:id="@+id/ne_area_r"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/muli_extrabold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ne_area_r"
+                android:text="plot 32"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:padding="25dp"
+                android:id="@+id/ne_loc_r"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/muli_extrabold"/>
+
+            <TextView
+                android:id="@+id/ne_type_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/muli_extrabold"
+                android:paddingLeft="25dp"
+                android:text="Grocery"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:id="@+id/rating_r"
+                android:numStars="5"
+                android:stepSize="0.2"
+                android:progressTint="@color/white"
+                android:progressBackgroundTint="@color/black"
+                android:padding="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                tools:ignore="DuplicateIds" />
+
+
+            <TextView
+                android:id="@+id/ne_price_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="175dp"
+                android:fontFamily="@font/muli_extrabold"
+                android:text="Pricey"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+
+            <!-- <ImageView
+                 android:id="@+id/nei"
+                 android:layout_width="120dp"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/ne"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginStart="20dp"
+                 android:layout_marginTop="25dp"
+                 android:layout_marginEnd="20dp"
+                 android:layout_marginRight="60dp"
+                 android:layout_marginBottom="20dp"/>-->
+
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:background="@color/mauve">
+
+
+
+            <Button
+                android:id="@+id/ne_num_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:padding="20dp"
+                android:text="01313-361600"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

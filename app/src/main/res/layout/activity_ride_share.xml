@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.RideShare"
+    android:background="@color/lightSky">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/back_pressed1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ride Shares"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/brandon_grotesque_black"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="8dp"
+            android:layout_margin="20dp"
+            android:background="@color/lighter_blue">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/colorAccent">
+
+
+                <TextView
+                    android:id="@+id/locations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dhaka,Chittagong,Bogra,\nBagerhat,Coxs Bazar,Dinajpur"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="20dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/muli_extrabold"/>
+
+                <ImageView
+                    android:id="@+id/nei"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/uber"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="20dp"/>
+                <RatingBar
+                    android:id="@+id/rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="4.79"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:progressBackgroundTint="@color/white"
+                    android:progressTint="@color/light_gray"
+                    android:padding="25dp"
+                    android:stepSize="1"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="8dp"
+            android:layout_margin="20dp"
+            android:background="@color/lighter_blue">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/lightWhite">
+
+
+                <TextView
+                    android:id="@+id/locations1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dhaka, Chittagong, Khulna,\nSylhet "
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/muli_extrabold"/>
+
+                <ImageView
+                    android:id="@+id/nei1"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pathao"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="20dp"/>
+                <RatingBar
+                    android:id="@+id/rate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="4.3"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:progressBackgroundTint="@color/card1"
+                    android:progressTint="@color/black"
+                    android:padding="25dp"
+                    android:stepSize="1"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="8dp"
+            android:layout_margin="20dp"
+            android:background="@color/lighter_blue">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/locations2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dhaka,Chittagong,Jashore,\nRajshahi,\nCox's Bazar, Saidpur,\nRangpurMymensingh, "
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:padding="20dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/muli_extrabold"/>
+
+                <ImageView
+                    android:id="@+id/nei2"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/obhai1"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="20dp"/>
+                <RatingBar
+                    android:id="@+id/rate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.8"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:progressBackgroundTint="@color/black"
+                    android:progressTint="@color/black"
+                    android:padding="25dp"
+                    android:stepSize="1"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

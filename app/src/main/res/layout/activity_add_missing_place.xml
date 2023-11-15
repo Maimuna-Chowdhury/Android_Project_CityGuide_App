@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.AddMissingPlace"
+    android:background="@color/lightSky"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/lightSky">
+
+        <Button
+            android:id="@+id/res_btn"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@color/hospital"
+            android:text="Restaurants"
+            android:textSize="35sp"
+            android:textColor="@color/lightWhite"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo" />
+
+        <Button
+            android:id="@+id/shop_btn"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@color/hospital"
+            android:textSize="35sp"
+            android:textColor="@color/lightWhite"
+            android:text="Shops"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo" />
+
+        <Button
+            android:id="@+id/bank_btn"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@color/hospital"
+            android:textSize="35sp"
+            android:textColor="@color/lightWhite"
+            android:text="Banks"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo" />
+
+        <Button
+            android:id="@+id/hos_btn"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@color/hospital"
+            android:textSize="35sp"
+            android:textColor="@color/lightWhite"
+            android:text="Hospitals"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo" />
+        <Button
+            android:id="@+id/edu_btn"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@color/hospital"
+            android:textSize="35sp"
+            android:textColor="@color/lightWhite"
+            android:text="Education"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo" />
+
+
+        <Button
+            android:id="@+id/any_btn"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:background="@color/hospital"
+            android:text="Any Place"
+            android:textSize="35sp"
+            android:textColor="@color/lightWhite"
+            android:layout_margin="30dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo" />
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

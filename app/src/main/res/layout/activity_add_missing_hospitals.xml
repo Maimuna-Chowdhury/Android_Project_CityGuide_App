@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.AddMissingHospitals"
+    android:background="@color/lightSky"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Desired Hospital"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:fontFamily="@font/muli_extrabold"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp" />
+
+
+    <EditText
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/add_hos_name" />
+
+
+    <EditText
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:id="@+id/add_hos_city" />
+
+    <EditText
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Area"
+        android:id="@+id/add_hos_area" />
+
+    <EditText
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:id="@+id/add_hos_loc" />
+
+    <EditText
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:id="@+id/add_hos_num" />
+
+    <EditText
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type"
+        android:id="@+id/add_hos_type" />
+
+    <EditText
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price Range"
+        android:id="@+id/add_hos_price" />
+
+    <Button
+        android:id="@+id/add_hos_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@color/light_blue"/>
+
+</LinearLayout>
